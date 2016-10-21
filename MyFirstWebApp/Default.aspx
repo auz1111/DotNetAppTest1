@@ -5,6 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        #okButton {
+            height: 26px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -18,7 +23,8 @@
         <asp:TextBox ID="lastNameTextBox" runat="server"></asp:TextBox>
         <br />
         <br />
-        <input id="okButton" type="button" value="Click Me" /><br />
+        <asp:Button ID="okButton" runat="server" OnClick="okButton_Click" Text="Button" />
+        <br />
         <br />
         <asp:Label ID="resultLabel" runat="server"></asp:Label>
     
